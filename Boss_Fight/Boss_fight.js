@@ -41,7 +41,7 @@ Def_perso1.innerHTML = Def_perso1.value;
 var atq_perso1 = 428;
 var spe_perso1 = 200;
 var mana_spe = 300;
-var mana_shield = 200;
+
 
 // Caractéristiques Boss //
 
@@ -89,10 +89,7 @@ function shield (){
 		bouton_shield.value = "Indisponible";
 		bouton_shield.disabled = true;
 		
-		Mana_perso1.value -= mana_shield;
-		Mana_perso1.innerHTML = Mana_perso1.value;
-		
-		textAction.innerHTML = "Votre sort vous protège de 20% des attaques du monstre. Vous avez utilisé "+mana_shield+" points de Mana.";
+		textAction.innerHTML = "Votre sort vous protège de 20% des attaques du monstre.";
 		
 		
 		bouton_atq.disabled = true;
@@ -141,15 +138,6 @@ function coup_Special (){
 }
 
 // Fonction check mana //
-
-function check_mana_shield(){
-	if (Mana_perso1.value < mana_shield){
-		bouton_shield.style.opacity = "0.5";
-		bouton_shield.value = "Indisponible";
-		bouton_shield.disabled = true;
-		textAction.innerHTML = "Vous n'avez plus assez de Mana.";
-	}
-}
 
 function check_mana_spe(){
 	if (Mana_perso1.value < mana_spe){
@@ -286,23 +274,18 @@ function mort_joueur (){
 // Interaction boutons //
 
 
+
+
 bouton_atq.addEventListener("click",atq);
 bouton_atq.addEventListener("click",mort_boss);
 
-
-
 bouton_shield.addEventListener("click",shield);
 
-
-
 bouton_spe.addEventListener("click",coup_Special);
-
-
 
 bouton_passer_tour.addEventListener("click",bossAtq);
 bouton_passer_tour.addEventListener("click",enableButton);
 bouton_passer_tour.addEventListener("click",mort_joueur);
-bouton_passer_tour.addEventListener("click",check_mana_shield);
 bouton_passer_tour.addEventListener("click",compte_tour);
 bouton_passer_tour.addEventListener("click",check_mana_spe);
 	
