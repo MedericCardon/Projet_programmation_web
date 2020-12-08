@@ -1,0 +1,294 @@
+body{
+	background-image: url("Images/Background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Time New Roman, serif;
+	overflow:hidden;
+}
+
+audio{
+	width:100px;
+	height: 30px;	
+	position:fixed;
+	left:90%
+}
+/* ------- PANNEAU PERSONNAGES --------*/
+
+.Panneau_perso{
+	display: flex;
+	border: 1px solid black;
+	position: fixed;
+	left: 1%;
+	right: 69%;
+	top: 2%;
+	bottom: 80%;
+	background: linear-gradient(#360606,#3b1e1e);
+	box-shadow: 3px 3px 10px #000000;
+	border-radius:5px;
+}
+
+#nom_perso1{
+	display: flex;
+	border: 1px solid black;
+	position: fixed;
+	left: 2%;
+	right: 90%;
+	top: 3%;
+	bottom: 94%;
+	box-shadow: 2px 2px 5px #000000;
+	background-color: #736d6d;
+	justify-content:center;
+	border-radius:5px;
+}
+
+#image_perso1{
+	display: flex;
+	border: 1px solid black;
+	position: fixed;
+	left: 2%;
+	right: 90%;
+	top: 7%;
+	bottom: 82%;
+	background-image: url("Images/Maeila2.png");
+	background-color: #736d6d;
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 2px 2px 5px #000000;
+	border-radius:5px;
+}
+
+#case_hp_perso1{
+	display: flex;
+	border: 1px solid black;
+	position: fixed;
+	left: 11%;
+	right: 83%;
+	top: 8%;
+	bottom: 83%;
+	background-color:#6a2020;
+}
+
+#case_mana_perso1{
+	display: flex;
+	border: 1px solid black;
+	position: fixed;
+	left: 18%;
+	right: 76%;
+	top: 8%;
+	bottom: 83%;
+	background-color:#203b6a;
+}
+
+#case_def_perso1{
+	display: flex;
+	border: 1px solid black;
+	position: fixed;
+	left: 25%;
+	right: 69.5%;
+	top: 8%;
+	bottom: 83%;
+	background-color: #6a5f20;
+	border-radius:5px;
+}
+
+.stats_perso{
+	box-shadow: 2px 2px 5px #000000;
+	border-radius:5px;
+	justify-content: center;
+	font-weight: bold;
+}
+
+#Hp_perso1{
+	display: flex;
+	position: fixed;
+	left: 11.2%;
+	right: 83.2%;
+	top: 11%;
+	bottom: 83.5%;
+	background-color: #6a2020;
+	justify-content: center;
+	padding-top: 10px;	
+	
+}
+
+#Mana_perso1{
+	display: flex;
+	position: fixed;
+	left: 18.2%;
+	right: 76.2%;
+	top: 11%;
+	bottom: 83.5%;
+	background-color:#203b6a;
+	justify-content: center;
+	padding-top: 10px;	
+}
+
+#Def_perso1{
+	display: flex;
+	position: fixed;
+	left: 25.2%;
+	right: 69.7%;
+	top: 11%;
+	bottom: 83.5%;
+	background-color: #6a5f20;
+	justify-content: center;
+	padding-top: 10px;	
+}
+
+/* -------- INTERFACE GAUCHE --------*/
+
+
+#Boite_dialogue{
+	display: flex;
+	border: 3px solid #360606;
+	width : 180px;
+	height: 100px;
+	position: fixed;
+	top:44%;
+	left: 1.7%;
+	background-color: black;
+	opacity: 0.8;
+	box-shadow: 2px 2px 5px #000000;
+	color: #ffffff;
+	font-size: 13px;
+	justify-content: center;
+	
+}
+
+#Action_bouton{
+	
+  display: flex;
+  border: 3px solid black;
+  position: fixed;
+  left: 1%;
+  top:60%;
+  width: 200px;
+  height: 270px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background:linear-gradient(#360606,#3b1e1e);
+  box-shadow: 2px 2px 5px #000000;
+}
+/* -------- PANNNEAU BOUTON --------*/
+
+.button {
+	display:inline-block;
+	box-shadow: 0px -1px 11px 3px #403d3e;
+	background-color:#333332;
+	border-radius:7px;
+	border:2px solid #000000;	
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Times New Roman;
+	font-size:17px;
+	padding:9px 22px;
+	text-decoration:none;
+	border: 1px solid #000000;
+	height: 40px;
+	width: 170px;
+	justify-content: center;
+}
+.button:hover {
+	background-color:#7d4242;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+#passer_tour{
+	display:inline-block;
+	box-shadow: 0px -1px 11px 3px #992413;
+	background-color:#403d3e;
+	border-radius:7px;
+	border:2px solid #000000;	
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Times New Roman;
+	font-size:17px;
+	padding:9px 22px;
+	text-decoration:none;
+	border: 1px solid #000000;
+	height: 40px;
+	width: 170px;
+	justify-content: center;
+}
+#passer_tour:hover {
+	background-color:#7d4242;
+}
+#passer_tour:active {
+	position:relative;
+	top:1px;
+}
+
+/* -------- Interface Boss --------*/
+
+
+#Info_boss{
+	display:flex;
+	width: 200px;
+	height: 50px;
+	top:40%;
+	left:45%;
+	justify-content:center;
+	position: fixed;
+	text-shadow: 1px 1px 2px grey;
+	border-radius: 5px;
+}
+
+
+#Image_boss{
+	display:flex;
+	width: 500px;
+	height: 400px;
+	top:43%;
+	left:35%;
+	justify-content:center;
+	position: fixed;
+	background-image: url("Images/Boss1.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#Image_tresor{
+	display:flex;
+	width: 500px;
+	height: 400px;
+	top:43%;
+	left:35%;
+	justify-content:center;
+	position: fixed;
+	background-image: url("Images/treasures.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	visibility:hidden;
+}
+
+
+#Nom_Boss{
+	display:flex;
+	width: 200px;
+	height: 25px;
+	top:40%;
+	left:45%;
+	justify-content:center;
+	position: fixed;
+	padding-top:5px;
+	font-size: 22px;
+	font-weight: bold;
+	
+}
+
+#Hp_Boss{
+	display:flex;
+	width: 200px;
+	height: 25px;
+	top:43.5%;
+	left:45%;
+	justify-content:center;
+	position: fixed;
+	padding-top:5px;
+	font-size: 17px;
+	
+}
