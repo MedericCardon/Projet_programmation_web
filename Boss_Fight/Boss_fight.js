@@ -18,6 +18,7 @@ var Nom_boss = document.getElementById("Nom_boss");
 var Hp_boss = document.getElementById("Hp_boss");
 var Info_boss = document.getElementById("Info_boss");
 var Partie_centre = document.getElementById("Partie_centre");
+var Image_tresor = document.getElementById("Image_tresor");
 
 // -------- Boite dialogue -------- //
 var textAction = document.getElementById("Boite_dialogue");
@@ -46,7 +47,7 @@ var mana_spe = 300;
 
 // Caractéristiques Boss //
 
-Hp_boss.value = 2800;
+Hp_boss.value = 2000;
 var dmg_boss = 200;
 
 // Etat bouton initial //
@@ -241,7 +242,8 @@ Image_boss.onmouseover = function(){
 
 function mort_boss (){
 	if (Hp_boss.value <= 0){
-	Partie_centre.style.opacity="0";
+	Image_boss.style.opacity="0";
+	Image_tresor.style.visibility="visible";
 	window.alert("Félicitation vous venez de tuer Le gardien.");
 	textAction.innerHTML = "Le gardien a succombé à ses blessures.";
 	
