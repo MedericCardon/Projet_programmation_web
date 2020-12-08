@@ -232,7 +232,7 @@ audio{
 	left:42.2%;
 	justify-content:center;
 	position: fixed;
-	background-image: url("Images/Boss1.png");
+	/*background-image: url("Images/Boss1.png");*/
 	background-image: url("Images/treasures.png")
 	background-position: cover;
 	background-repeat: no-repeat;
