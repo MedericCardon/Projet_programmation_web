@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<link href="Boss_fight.css" media="screen" rel="stylesheet" type="text/css"/>	  
+<title>Boss fight</title>	   
+</head>
+<body>		
+	<section class = "Partie_superieure">
+		<audio src="Sound/bosstheme_WO_low.mp3" controls loop mute></audio>
+		<section class = "Panneau_perso" id="Personnages">
+			<div class = "nom_lvl" id="nom_perso1">Maelia. Lvl 23</div>
+			<div class = "personnage" id="image_perso1"></div>
+			<div class = "stats_Perso" id="case_hp_perso1">HP</div>
+			<div id = "Hp_perso1">/100</div>
+			<div class ="stats_Perso" id="case_mana_perso1">Mana</div>
+			<div id = "Mana_perso1">/100</div>
+			<div class = "stats_Perso" id="case_def_perso1">Def</div>
+			<div id = "Def_perso1">10</div>
+			<!-- Mettre autres persos ici -->	
+		</section>	
+	</section>
+	
+	<section id ="Partie_gauche">
+		<div id = "Boite_dialogue">...</div>
+		<div id="Action_bouton">
+		
+		<input type="button" class="button" id="atq" value="Attaquer">
+		<input type="button" class="button" id="shield" value="Sort de protection">
+		<input type="button" class="button" id="spe" value="Sort de soin">
+		<input type="button" id="passer_tour" value="Passer son tour">
+		
+		</div>
+	</section>	
+
+	<section id="Partie_centre">
+		<div id="Image_boss"></div>
+		<div id="Image_tresor"></div>
+		<div id="Info_boss">
+			<div id="Nom_boss"></div>
+			<div id="Hp_boss"></div>
+		</div>
+	</section>
+</body>
+ 
+
+
+
+
+ 
+<script src="Boss_fight.js">
+	
+</script>
+	
+</html>
