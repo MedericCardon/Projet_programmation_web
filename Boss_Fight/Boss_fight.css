@@ -224,19 +224,6 @@ audio{
 
 /* -------- Interface Boss --------*/
 
-#Image_boss{
-	display:flex;
-	width: 270px;
-	height: 400px;
-	top:43%;
-	left:42.2%;
-	justify-content:center;
-	position: fixed;
-	/*background-image: url("Images/Boss1.png");*/
-	background-image: url("Images/treasures.png")
-	background-position: cover;
-	background-repeat: no-repeat;
-}
 
 #Info_boss{
 	display:flex;
@@ -249,6 +236,35 @@ audio{
 	text-shadow: 1px 1px 2px grey;
 	border-radius: 5px;
 }
+
+
+#Image_boss{
+	display:flex;
+	width: 500px;
+	height: 400px;
+	top:43%;
+	left:35%;
+	justify-content:center;
+	position: fixed;
+	background-image: url("Images/Boss1.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#Image_tresor{
+	display:flex;
+	width: 500px;
+	height: 400px;
+	top:43%;
+	left:35%;
+	justify-content:center;
+	position: fixed;
+	background-image: url("Images/treasures.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	visibility:hidden;
+}
+
 
 #Nom_Boss{
 	display:flex;
