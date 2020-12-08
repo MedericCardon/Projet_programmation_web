@@ -183,7 +183,7 @@ function enableButton (){
 		
 	if(tour_spe == 0){
 		bouton_spe.disabled = false;
-		bouton_spe.value = "Coup spécial";
+		bouton_spe.value = "Sort de soin";
 		bouton_spe.style.opacity = "1";}
 	else{
 		bouton_spe.style.opacity = "0.5";
