@@ -1,0 +1,61 @@
+<html>
+    <head>
+      <meta charset="utf-8"/>
+      <link href="RpgBattle.css" media="screen" rel="stylesheet" type="text/css"/>
+	  
+       <title>Monster Battle</title>
+	   
+    </head>
+	
+<!-- Fight Interface -->
+
+	<body>
+
+
+	
+		<section id="partieSuperieure">
+
+			<div 
+				id="TableauPerso"><div id="imagePerso"> Lvl 23<img src="Heroine.jpg" alt=""/></div>
+  
+				<div id="HP" class="Cara">HP <div class="scoreReel" id="scoreHP"></div><div class="scoreFix">/2483</div></div>
+  
+				<div id="Mana" class="Cara">Mana <div class="scoreReel"  id="scoreMana"></div><div class="scoreFix">/853</div></div>
+  
+				<div id="Ultime" class="Cara">Ultime <div class="scoreReel" id="scoreUltime"></div><div class="scoreFix">/150</div></div>
+			</div>
+	
+			<audio src="Sound/bosstheme_WO_low.mp3" controls loop mute></audio>
+	
+	
+		</section>
+		
+  <!-- Monster interface -->
+ 
+		<section id="Zone">	
+			<section id="partieInferieure">
+
+				<div id="Dialogue"></div>
+	
+				<div id="Action"> 
+		
+					<input type="button" class="button" id="atq" value="Attaquer">
+					<input type="button" class="button" id="shield" value="Sort de protection">
+					<input type="button" class="button" id="heal" value="Se soigner">
+					<input type="button" id="passerTour" value="Passer son tour">
+		
+				</div>
+	
+			</section>	
+	
+				<div id="boss"><div class="CaraBoss"><div id="HpBoss"></div><div id="HpFix">/ 4800</div></div></div>
+
+		</section>	
+	
+	</body>
+  
+<script src="RpgBattle.js">
+	
+</script>
+	
+</html>
