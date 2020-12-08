@@ -32,7 +32,7 @@ var tour_spe = 0;
 Hp_perso1.value = 2437;
 Hp_perso1.innerHTML = Hp_perso1.value;
 
-Mana_perso1.value = 500;
+Mana_perso1.value = 1489;
 Mana_perso1.innerHTML = Mana_perso1.value;
 
 Def_perso1.value = 10;
