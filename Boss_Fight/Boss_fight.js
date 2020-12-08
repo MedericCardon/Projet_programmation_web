@@ -1,3 +1,4 @@
+body{width:100%;}
 
 // -------- Stats perso -------- //
 var Hp_perso1 = document.getElementById("Hp_perso1");
