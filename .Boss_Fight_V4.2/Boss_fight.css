@@ -91,6 +91,72 @@ audio{
 	border-radius:5px;
 }
 
+#nom_perso2{
+	display: flex;
+	border: 1px solid black;
+	position: fixed;
+	left: 2%;
+	right: 90%;
+	top: 3%;
+	bottom: 94%;
+	box-shadow: 2px 2px 5px #000000;
+	background-color: #736d6d;
+	justify-content:center;
+	border-radius:5px;
+}
+
+#image_perso2{
+	display: flex;
+	border: 1px solid black;
+	position: fixed;
+	left: 2%;
+	right: 90%;
+	top: 7%;
+	bottom: 82%;
+	background-image: url("Images/Maeila2.png");
+	background-color: #736d6d;
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 2px 2px 5px #000000;
+	border-radius:5px;
+}
+
+#case_hp_perso2{
+	display: flex;
+	border: 1px solid black;
+	position: fixed;
+	left: 11%;
+	right: 83%;
+	top: 8%;
+	bottom: 83%;
+	background-color:#6a2020;
+}
+
+#case_mana_perso2{
+	display: flex;
+	border: 1px solid black;
+	position: fixed;
+	left: 18%;
+	right: 76%;
+	top: 8%;
+	bottom: 83%;
+	background-color:#203b6a;
+}
+
+#case_def_perso2{
+	display: flex;
+	border: 1px solid black;
+	position: fixed;
+	left: 25%;
+	right: 69.5%;
+	top: 8%;
+	bottom: 83%;
+	background-color: #6a5f20;
+	border-radius:5px;
+}
+
+
+
 .stats_perso{
 	box-shadow: 2px 2px 5px #000000;
 	border-radius:5px;
@@ -124,6 +190,43 @@ audio{
 }
 
 #Def_perso1{
+	display: flex;
+	position: fixed;
+	left: 25.2%;
+	right: 69.7%;
+	top: 11%;
+	bottom: 83.5%;
+	background-color: #6a5f20;
+	justify-content: center;
+	padding-top: 10px;	
+}
+
+#Hp_perso2{
+	display: flex;
+	position: fixed;
+	left: 11.2%;
+	right: 83.2%;
+	top: 11%;
+	bottom: 83.5%;
+	background-color: #6a2020;
+	justify-content: center;
+	padding-top: 10px;	
+	
+}
+
+#Mana_perso2{
+	display: flex;
+	position: fixed;
+	left: 18.2%;
+	right: 76.2%;
+	top: 11%;
+	bottom: 83.5%;
+	background-color:#203b6a;
+	justify-content: center;
+	padding-top: 10px;	
+}
+
+#Def_perso2{
 	display: flex;
 	position: fixed;
 	left: 25.2%;
