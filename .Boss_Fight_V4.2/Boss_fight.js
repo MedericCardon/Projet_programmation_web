@@ -3,14 +3,25 @@
 // -------- Stats perso -------- //
 var Hp_perso1 = document.getElementById("Hp_perso1");
 var Mana_perso1 = document.getElementById("Mana_perso1");
-var Def_perso1= document.getElementById("Def_perso1");
+var Def_perso1 = document.getElementById("Def_perso1");
+var image_perso1 = document.getElementById("image_perso1");
+var nom_perso1 = document.getElementById("nom_perso1");
+
+var Hp_perso2 = document.getElementById("Hp_perso2").style.visibility="hidden";
+var Mana_perso2 = document.getElementById("Mana_perso2").style.visibility="hidden";
+var Def_perso2 = document.getElementById("Def_perso2").style.visibility="hidden";
+var image_perso2 = document.getElementById("image_perso2").style.visibility="hidden";
+var nom_perso2 = document.getElementById("nom_perso2").style.visibility="hidden";
+
 
 // -------- Boutons -------- //
 
-var bouton_atq = document.getElementById("atq");
-var bouton_shield = document.getElementById("shield");
-var bouton_spe = document.getElementById("spe");
-var bouton_passer_tour = document.getElementById("passer_tour");
+var bouton_atq_perso1 = document.getElementById("atq_perso1");
+var bouton_shield_perso1 = document.getElementById("shield_perso1");
+var bouton_spe_perso1 = document.getElementById("spe_perso1");
+var bouton_passer_tour_perso1 = document.getElementById("passer_tour_perso1");
+
+
 
 // -------- Boss interface -------- //
 var Image_boss = document.getElementById("Image_boss");
@@ -52,29 +63,29 @@ var dmg_boss = 200;
 
 // Etat bouton initial //
 
-bouton_passer_tour.disabled = true;
-bouton_passer_tour.style.opacity = "0.5";
+bouton_passer_tour_perso1.disabled = true;
+bouton_passer_tour_perso1.style.opacity = "0.5";
 
 // Fonctions boutons //
 
 
 function atq(){
 		
-	if (bouton_atq.disabled == false && tour_atq == 0){
+	if (bouton_atq_perso1.disabled == false && tour_atq == 0){
 		
 		Hp_boss.value -= atq_perso1;
-		bouton_atq.style.opacity = "0.5";
-		bouton_atq.value = "Indisponible";
-		bouton_atq.disabled = true;
+		bouton_atq_perso1.style.opacity = "0.5";
+		bouton_atq_perso1.value = "Indisponible";
+		bouton_atq_perso1.disabled = true;
 		textAction.innerHTML = "Vous avez infligé "+atq_perso1+" points de dégats";
 		
-		bouton_shield.disabled = true;
-		bouton_spe.disabled = true;
-		bouton_passer_tour.disabled = false;
+		bouton_shield_perso1.disabled = true;
+		bouton_spe_perso1.disabled = true;
+		bouton_passer_tour_perso1.disabled = false;
 		
-		bouton_shield.style.opacity = "0.5";
-		bouton_spe.style.opacity = "0.5";
-		bouton_passer_tour.style.opacity = "1";
+		bouton_shield_perso1.style.opacity = "0.5";
+		bouton_spe_perso1.style.opacity = "0.5";
+		bouton_passer_tour_perso1.style.opacity = "1";
 		
 		tour_atq = 1;
 	}	
@@ -82,34 +93,34 @@ function atq(){
 
 function shield (){
 	
-	if (bouton_shield.disabled == false && tour_def == 0){
+	if (bouton_shield_perso1.disabled == false && tour_def == 0){
 		
 		dmg_boss = dmg_boss * 0.8;
 		Def_perso1.value += 10;
 		Def_perso1.innerHTML = Def_perso1.value;
-		bouton_shield.style.opacity = "0.5";
-		bouton_shield.value = "Indisponible";
-		bouton_shield.disabled = true;
+		bouton_shield_perso1.style.opacity = "0.5";
+		bouton_shield_perso1.value = "Indisponible";
+		bouton_shield_perso1.disabled = true;
 		
 		textAction.innerHTML = "Votre sort vous protège de 20% des attaques du monstre.";
 		
 		
-		bouton_atq.disabled = true;
-		bouton_spe.disabled = true;
-		bouton_passer_tour.disabled = false;
+		bouton_atq_perso1.disabled = true;
+		bouton_spe_perso1.disabled = true;
+		bouton_passer_tour_perso1.disabled = false;
 		
-		bouton_passer_tour.style.opacity = "1";
-		bouton_atq.style.opacity = "0.5";
-		bouton_spe.style.opacity = "0.5";
+		bouton_passer_tour_perso1.style.opacity = "1";
+		bouton_atq_perso1.style.opacity = "0.5";
+		bouton_spe_perso1.style.opacity = "0.5";
 		
 		tour_def = 1;
 	}	
 }
 
 
-function coup_Special (){
+function coup_Special_perso1 (){
 	
-	if (bouton_spe.disabled == false && Hp_perso1.value <= 2237 && tour_spe == 0){
+	if (bouton_spe_perso1.disabled == false && Hp_perso1.value <= 2237 && tour_spe == 0){
 
 		Hp_perso1.value += spe_perso1;
 		Hp_perso1.innerHTML = Hp_perso1.value;
@@ -117,20 +128,20 @@ function coup_Special (){
 		Mana_perso1.value -= mana_spe;
 		Mana_perso1.innerHTML = Mana_perso1.value;
 		
-		bouton_spe.style.opacity = "0.5";
-		bouton_spe.value = "Indisponible";
-		bouton_spe.disabled = true;
+		bouton_spe_perso1.style.opacity = "0.5";
+		bouton_spe_perso1.value = "Indisponible";
+		bouton_spe_perso1.disabled = true;
 		
 		textAction.innerHTML = "Vos points de vie remontent de "+spe_perso1+" points. Vous avez utilisé "+mana_spe+" points de Mana";
 		
 		
-		bouton_atq.disabled = true;
-		bouton_shield.disabled = true;
-		bouton_passer_tour.disabled = false;
+		bouton_atq_perso1.disabled = true;
+		bouton_shield_perso1.disabled = true;
+		bouton_passer_tour_perso1.disabled = false;
 		
-		bouton_passer_tour.style.opacity = "1";
-		bouton_atq.style.opacity = "0.5";
-		bouton_shield.style.opacity = "0.5";
+		bouton_passer_tour_perso1.style.opacity = "1";
+		bouton_atq_perso1.style.opacity = "0.5";
+		bouton_shield_perso1.style.opacity = "0.5";
 		
 		tour_spe = 1;
 	}	
@@ -143,9 +154,9 @@ function coup_Special (){
 
 function check_mana_spe(){
 	if (Mana_perso1.value < mana_spe){
-		bouton_spe.style.opacity = "0.5";
-		bouton_spe.value = "Indisponible";
-		bouton_spe.disabled = true;
+		bouton_spe_perso1.style.opacity = "0.5";
+		bouton_spe_perso1.value = "Indisponible";
+		bouton_spe_perso1.disabled = true;
 		textAction.innerHTML = "Vous n'avez plus assez de Mana.";
 	}
 }
@@ -164,34 +175,34 @@ function bossAtq (){
 
 function enableButton (){
 	if (tour_atq == 0){
-		bouton_atq.disabled = false;
-		bouton_atq.value = "Attaquer";
-		bouton_atq.style.opacity = "1";}
+		bouton_atq_perso1.disabled = false;
+		bouton_atq_perso1.value = "Attaquer";
+		bouton_atq_perso1.style.opacity = "1";}
 	else{
-		bouton_atq.style.opacity = "0.5";
-		bouton_atq.value = "Indisponible";
-		bouton_atq.disabled = true;}
+		bouton_atq_perso1.style.opacity = "0.5";
+		bouton_atq_perso1.value = "Indisponible";
+		bouton_atq_perso1.disabled = true;}
 		
 	if (tour_def == 0){
-		bouton_shield.disabled = false;
-		bouton_shield.value = "Sort de protection";
-		bouton_shield.style.opacity = "1";}
+		bouton_shield_perso1.disabled = false;
+		bouton_shield_perso1.value = "Sort de protection";
+		bouton_shield_perso1.style.opacity = "1";}
 	else{
-		bouton_shield.style.opacity = "0.5";
-		bouton_shield.value = "Indisponible";
-		bouton_shield.disabled = true;}
+		bouton_shield_perso1.style.opacity = "0.5";
+		bouton_shield_perso1.value = "Indisponible";
+		bouton_shield_perso1.disabled = true;}
 		
 	if(tour_spe == 0){
-		bouton_spe.disabled = false;
-		bouton_spe.value = "Sort de soin";
-		bouton_spe.style.opacity = "1";}
+		bouton_spe_perso1disabled = false;
+		bouton_spe_perso1.value = "Coup spécial";
+		bouton_spe_perso1.style.opacity = "1";}
 	else{
-		bouton_spe.style.opacity = "0.5";
-		bouton_spe.value = "Indisponible";
-		bouton_spe.disabled = true;}
+		bouton_spe_perso1.style.opacity = "0.5";
+		bouton_spe_perso1.value = "Indisponible";
+		bouton_spe_perso1.disabled = true;}
 	
-	bouton_passer_tour.disabled = true;
-	bouton_passer_tour.style.opacity = "0.5";
+	bouton_passer_tour_perso1.disabled = true;
+	bouton_passer_tour_perso1.style.opacity = "0.5";
 }
 
 // Fonction compte tour //
@@ -248,11 +259,11 @@ function mort_boss (){
 	textAction.innerHTML = "Le gardien a succombé à ses blessures.";
 	
 	
-	bouton_atq.disabled = true;
-	bouton_shield.disabled = true;
-	bouton_spe.disabled = true;
-	bouton_passer_tour.disabled = true;
-	bouton_passer_tour.style.opacity = "0.5";
+	bouton_atq_perso1.disabled = true;
+	bouton_shield_perso1.disabled = true;
+	bouton_spe_perso1disabled = true;
+	bouton_passer_tour_perso1.disabled = true;
+	bouton_passer_tour_perso1.style.opacity = "0.5";
 	}
 }
 
@@ -263,14 +274,14 @@ function mort_joueur (){
 	textAction.innerHTML = "Vous venez de succomber à vos blessures.";
 	
 	
-	bouton_atq.disabled = true;
-	bouton_atq.style.opacity = "0.5";
-	bouton_shield.disabled = true;
-	bouton_shield.style.opacity = "0.5";
-	bouton_spe.disabled = true;
-	bouton_spe.style.opacity = "0.5";
-	bouton_passer_tour.disabled = true;
-	bouton_passer_tour.style.opacity = "0.5";	
+	bouton_atq_perso1.disabled = true;
+	bouton_atq_perso1.style.opacity = "0.5";
+	bouton_shield_perso1.disabled = true;
+	bouton_shield_perso1.style.opacity = "0.5";
+	bouton_spe_perso1disabled = true;
+	bouton_spe_perso1.style.opacity = "0.5";
+	bouton_passer_tour_perso1.disabled = true;
+	bouton_passer_tour_perso1.style.opacity = "0.5";	
 	}
 }
 
@@ -279,17 +290,17 @@ function mort_joueur (){
 
 
 
-bouton_atq.addEventListener("click",atq);
-bouton_atq.addEventListener("click",mort_boss);
+bouton_atq_perso1.addEventListener("click",atq);
+bouton_atq_perso1.addEventListener("click",mort_boss);
 
-bouton_shield.addEventListener("click",shield);
+bouton_shield_perso1.addEventListener("click",shield);
 
-bouton_spe.addEventListener("click",coup_Special);
+bouton_spe_perso1.addEventListener("click",coup_Special_perso1);
 
-bouton_passer_tour.addEventListener("click",bossAtq);
-bouton_passer_tour.addEventListener("click",enableButton);
-bouton_passer_tour.addEventListener("click",mort_joueur);
-bouton_passer_tour.addEventListener("click",compte_tour);
-bouton_passer_tour.addEventListener("click",check_mana_spe);
+bouton_passer_tour_perso1.addEventListener("click",bossAtq);
+bouton_passer_tour_perso1.addEventListener("click",enableButton);
+bouton_passer_tour_perso1.addEventListener("click",mort_joueur);
+bouton_passer_tour_perso1.addEventListener("click",compte_tour);
+bouton_passer_tour_perso1.addEventListener("click",check_mana_spe);
 	
 

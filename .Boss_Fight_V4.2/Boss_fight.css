@@ -113,7 +113,7 @@ audio{
 	right: 90%;
 	top: 7%;
 	bottom: 82%;
-	background-image: url("Images/Maeila2.png");
+	background-image: url("Images/Clynt.png");
 	background-color: #736d6d;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -300,7 +300,7 @@ audio{
 	top:1px;
 }
 
-#passer_tour{
+#passer_tour_perso1{
 	display:inline-block;
 	box-shadow: 0px -1px 11px 3px #992413;
 	background-color:#403d3e;
@@ -317,13 +317,15 @@ audio{
 	width: 170px;
 	justify-content: center;
 }
-#passer_tour:hover {
+#passer_tour_perso1:hover {
 	background-color:#7d4242;
 }
-#passer_tour:active {
+#passer_tour_perso1:active {
 	position:relative;
 	top:1px;
 }
+
+
 
 /* -------- Interface Boss --------*/
 
