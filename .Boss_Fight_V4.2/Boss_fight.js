@@ -241,10 +241,10 @@ function check_mana_spe(){
 // Fonctions attaque boss //
 
 function bossAtq (){
-	
+	if (tour_perso >2){
 	Hp_perso1.value -= dmg_boss;
 	Hp_perso1.innerHTML = Hp_perso1.value;
-	textAction.innerHTML = "Le gardien vous inflige "+dmg_boss+" points de dégats.";
+	textAction.innerHTML = "Le gardien vous inflige "+dmg_boss+" points de dégats.";}
 }
 
 
