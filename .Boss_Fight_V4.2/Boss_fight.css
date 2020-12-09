@@ -201,42 +201,7 @@ audio{
 	padding-top: 10px;	
 }
 
-#Hp_perso2{
-	display: flex;
-	position: fixed;
-	left: 11.2%;
-	right: 83.2%;
-	top: 11%;
-	bottom: 83.5%;
-	background-color: #6a2020;
-	justify-content: center;
-	padding-top: 10px;	
-	
-}
 
-#Mana_perso2{
-	display: flex;
-	position: fixed;
-	left: 18.2%;
-	right: 76.2%;
-	top: 11%;
-	bottom: 83.5%;
-	background-color:#203b6a;
-	justify-content: center;
-	padding-top: 10px;	
-}
-
-#Def_perso2{
-	display: flex;
-	position: fixed;
-	left: 25.2%;
-	right: 69.7%;
-	top: 11%;
-	bottom: 83.5%;
-	background-color: #6a5f20;
-	justify-content: center;
-	padding-top: 10px;	
-}
 
 /* -------- INTERFACE GAUCHE --------*/
 
@@ -300,7 +265,7 @@ audio{
 	top:1px;
 }
 
-#passer_tour_perso1{
+#passer_tour{
 	display:inline-block;
 	box-shadow: 0px -1px 11px 3px #992413;
 	background-color:#403d3e;
@@ -317,10 +282,10 @@ audio{
 	width: 170px;
 	justify-content: center;
 }
-#passer_tour_perso1:hover {
+#passer_tour:hover {
 	background-color:#7d4242;
 }
-#passer_tour_perso1:active {
+#passer_tour:active {
 	position:relative;
 	top:1px;
 }
