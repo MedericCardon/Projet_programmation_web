@@ -48,7 +48,7 @@ var mana_spe = 300;
 // Caractéristiques Boss //
 
 Hp_boss.value = 2000;
-var dmg_boss = 200;
+var dmg_boss = 320;
 
 // Etat bouton initial //
 
@@ -209,7 +209,7 @@ function compte_tour(){
 			tour_def = 0;
 			Def_perso1.value = 10;
 			Def_perso1.innerHTML = 10;
-			dmg_boss = 200;
+			dmg_boss = 320;
 			
 		}
 	}
