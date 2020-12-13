@@ -26,7 +26,7 @@ audio{
 	box-shadow: 3px 3px 10px #000000;
 	border-radius:5px;
 }
-
+/*#736d6d*/
 #nom_perso1{
 	display: flex;
 	border: 1px solid black;
@@ -36,9 +36,10 @@ audio{
 	top: 3%;
 	bottom: 94%;
 	box-shadow: 2px 2px 5px #000000;
-	background-color: #736d6d;
+	background-color: #343430;
 	justify-content:center;
 	border-radius:5px;
+	color: #bfbfb3;
 }
 
 #image_perso1{
@@ -50,7 +51,7 @@ audio{
 	top: 7%;
 	bottom: 82%;
 	background-image: url("Images/Maeila2.png");
-	background-color: #736d6d;
+	background-color: #343430;
 	background-size: cover;
 	background-repeat: no-repeat;
 	box-shadow: 2px 2px 5px #000000;
